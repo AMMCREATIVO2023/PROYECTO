@@ -121,6 +121,19 @@ if(window.location.href.indexOf('reloj') > -1){
     
 }
 
+// Validación formulario
+if(window.location.href.indexOf('contact') > -1){
+    $("form input[name='date']").datepicker({
+        dateFormat: 'dd-mm-yy'
+    });
+
+    $.validate({
+        lang: 'es',
+        errorMessagePosition: 'top',
+        scrollToTopOnError: true
+    });
+    
+}
 });
 
 

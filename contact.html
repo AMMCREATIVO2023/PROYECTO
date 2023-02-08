@@ -49,7 +49,25 @@
         <div id="box">
             <h2>FORMULARIO DE CONTACTO</h2>
           <!--Carga del formulario de contacto-->
-          
+          <form id="form_contact" action="" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" data-validation="alphanumeric" name="name"/>
+            <label for="surname">Apellidos</label>
+            <input type="text" data-validation="alphanumeric" name="surname"/>
+            <label for="email">Email</label>
+            <input type="email" data-validation="email" name="email"/>
+            <label for="sex">Sexo</label>
+            <select name="sex" data-validation="required">
+                <option value="men">Hombre</option>
+                <option value="woman">Mujer</option>
+            </select>
+            <label for="date">Fecha de Nacimiento</label>
+            <input type="text" data-validation="date" date-validation-format="dd-mm-yyyy" name="date"/>
+            <label for="years">Edad</label>
+            <input type="number" data-validation="number" name="years"/>
+            <input type="submit" value="Enviar"/>
+          </form>
+        <!-- data-validation="length alphanumeric" data-validation-length="min4" -->
         </div>
         <aside id="sidebar"> 
             <div id="about">
